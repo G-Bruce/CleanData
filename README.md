@@ -77,4 +77,4 @@
 *  The objective in this section is to update the labels with descriptive names, which are needed to interact with the final step.
     The update table: Begins with t = time, Begins with f = frequency, Acc = Accelerometer, Gyro = Gyroscope, Mag = Magnitude, BodyBody = Body
 
-# -- OBJECTIVE 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject ---    
+## -- OBJECTIVE 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject ---    
