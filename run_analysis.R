@@ -1,7 +1,7 @@
 # DS - Getting Clean Data - Programming Assignment
 
 # Load Requred packages
-library(plyr);
+library(plyr); library(knitr)
 
 # Remove global variables
 rm(list=ls())
@@ -133,4 +133,5 @@ names(SourceData)<-gsub("BodyBody", "Body", names(SourceData))
 
 SourceDataAgg<-aggregate(. ~subject + activity, SourceData, mean)
 SourceDataAgg<-SourceDataAgg[order(SourceDataAgg$subject,SourceDataAgg$activity),]
-write.csv(SourceDataAgg, file = "SourceDataAgg.csv")
+write.table(SourceDataAgg, file = "SourceDataAgg.txt", row.name=FALSE)
+knit2html("codebook.md")
